@@ -20,7 +20,7 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<List<Product>> getAll() {
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body(service.getAllProducts());
+        return ResponseEntity.status(HttpStatus.OK).body(service.getAllProducts());
     }
 
     @GetMapping("/{id}")
